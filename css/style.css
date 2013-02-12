@@ -59,21 +59,16 @@ td { vertical-align: top; }
 
 input:focus { outline-width:0; }
 
+body {
+	padding: 50px;
+}
 #today {
-	width: 75%;
-	margin: auto;
-	margin-top: 45%;
-	
 	font-family: 'Helvetica Neue';
 	font-weight: bold;
 	text-align: center;
 	font-size: 24px;
 }
-#tomorrow {
-	width: 75%;
-	margin: auto;
-	margin-top: 10px;
-	
+#tomorrow {	
 	font-family: 'Helvetica Neue';
 	font-weight: bold;
 	text-align: center;
@@ -84,4 +79,19 @@ input:focus { outline-width:0; }
 	position: fixed;
 	top: 0; right: 0; bottom: 0; left: 0;
 	background: url('../img/load.gif') no-repeat center center;
+}
+.huge {
+	font-size: 240px;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body {
+		padding: 0;
+	}
+	#today, #tomorrow {
+		width: 320px;
+		margin: auto;
+	}
+	.huge {
+		font-size: 140px;
+	}
 }

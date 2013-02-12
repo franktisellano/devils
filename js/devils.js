@@ -8,7 +8,7 @@ $(document).ready(function() {
 			switch(this.when)
 			{
 				case 'today':
-					var str = 'Devils vs ' + this.opponent + ' today at ' + this.gametime + ' on ' + this.network_results + '.';
+					var str = '<div class="huge">YES</div><br />Devils vs ' + this.opponent + ' today at ' + this.gametime + ' on ' + this.network_results + '.';
 					$('#today').html(str);
 					
 					today = 1;
@@ -16,7 +16,7 @@ $(document).ready(function() {
 				
 				case 'tomorrow':
 					if (today != 1) {
-						var str = 'Tomorrow: Devils vs ' + this.opponent + ' today at ' + this.gametime + ' on ' + this.network_results + '.';
+						var str = '<div class="huge">NO</div><br />Tomorrow: Devils vs ' + this.opponent + ' today at ' + this.gametime + ' on ' + this.network_results + '.';
 						$('#today').html(str);
 						today = 1;
 						
