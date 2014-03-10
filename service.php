@@ -1,8 +1,7 @@
 <?php
 	include 'phpQuery.php';
 
-	// Constants
-    const EXTERNAL_URL  = 'http://devils.nhl.com/club/schedule.htm';
+    	const EXTERNAL_URL  = 'http://devils.nhl.com/club/schedule.htm';
 	date_default_timezone_set('EST');
 
 	// Initiate phpQuery object
